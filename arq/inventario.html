@@ -98,8 +98,9 @@
     <!-- BOTONES-->
     <div class="btns">
         <button type = "button" class="btn btn-primary btn-lg px-4 me-sm-3 " data-bs-toggle="modal" data-bs-target="#staticAgregar" id = "agregar_prod" style="margin-left: 150px; margin-top: 50px;">Agregar</button>
-        <button type = "button" class="btn btn-primary btn-lg px-4 me-sm-3" data-bs-toggle="modal" data-bs-target="#staticEliminar" id = "agregar_prod" style="margin-left: 600px; margin-top: 50px;">Eliminar</button>
-        <button type = "button" class="btn btn-primary btn-lg px-4 me-sm-3" data-bs-toggle="modal" data-bs-target="#staticEditar" id = "agregar_prod" style="margin-left: 600px; margin-top: 50px;">Editar</button>
+        <button type = "button" class="btn btn-primary btn-lg px-4 me-sm-3" data-bs-toggle="modal" data-bs-target="#staticEliminar" id = "eliminar_prod" style="margin-left: 600px; margin-top: 50px;">Eliminar</button>
+        <button type = "button" class="btn btn-primary btn-lg px-4 me-sm-3" data-bs-toggle="modal" data-bs-target="#staticEditar" id = "editar_prod" style="margin-left: 600px; margin-top: 50px;">Editar</button>
+        <button type = "button" class="btn btn-primary btn-lg px-4 me-sm-3" data-bs-toggle="modal" data-bs-target="#staticListado" id = "generar_listado" style="margin-left: 858px; margin-top: 100px;">Generar Listado</button>
     </div>
     
     <!-- Modal AGREGAR -->
@@ -114,19 +115,18 @@
                 <div class="container" >
                     <br><br><br>
                         <form class = "col-6">
+                            <b><label>ID</label></b>
+                            <input type="text" class = "form-control" id = "id">
                             <b><label>Nombre producto</label></b>
                             <input type="text" class = "form-control" id = "nombre_prod">
                             <b><label>Cantidad</label></b>
                             <input type="text" class = "form-control" id = "cantidad_prod">
-                            <b><label>Formato almacenaje</label></b>
-                            <input type="text" class = "form-control" id = "formato_prod">
                         </form>
                 </div>
             
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary">Enviar</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
             </div>
         </div>
         </div>
@@ -145,18 +145,15 @@
                 <div class="container" >
                     <br><br><br>
                         <form class = "col-6" >
-                            <b><label>Nombre producto</label></b>
-                            <input type="text" class = "form-control" id = "nombre_prod">
+                            <b><label>ID</label></b>
+                            <input type="text" class = "form-control" id = "id">
                             <b><label>Cantidad</label></b>
                             <input type="text" class = "form-control" id = "cantidad_prod">
-                            <b><label>Formato almacenaje</label></b>
-                            <input type="text" class = "form-control" id = "formato_prod">
                         </form>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary">Enviar</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
             </div>
         </div>
         </div>
@@ -175,6 +172,8 @@
                 <div class="container" >
                     <br><br><br>
                         <form class = "col-6">
+                            <b><label>ID</label></b>
+                            <input type="text" class = "form-control" id = "id">
                             <b><label>Nombre producto</label></b>
                             <input type="text" class = "form-control" id = "nombre_prod">
                             <b><label>Cantidad</label></b>
@@ -185,16 +184,31 @@
                 </div>
             </div>
             <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Enviar</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
             </div>
         </div>
         </div>
     </div>
     <!-- Modal EDITAR -->
-    
-    
 
+    <!-- Modal GENERAR LISTADO-->
+    <div class="modal fade" id="staticListado" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Listado de Productos</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Pronto...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal GENERAR LISTADO -->
 
 
     <!-- About Start -->
